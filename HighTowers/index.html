@@ -17,33 +17,34 @@
 <body>
     <!--Navigation Bar-->
     <header>
-        <nav aria-label="Main Navigation">
+        <nav class="navbar">
             <div class="navbar-container">
-                <div class="logo">
-                    <a href="#" aria-label="HighTowers Home">HighTowers</a>
+                <div class="navbar-logo">
+                    <a href="#" aria-label="HighTowers Home" class="logo">HighTowers</a>
                 </div>
                 <button class="menu-toggle" aria-label="Open menu" aria-controls="primary-navigation"
                     aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-                <ul class="nav-links" id="primary-navigation" role="menubar">
-                    <li role="none"><a role="menuitem" href="#home">Home</a></li>
-                    <li role="none"><a role="menuitem" href="#about">About</a></li>
-                    <li role="none"><a role="menuitem" href="#tour">Tour</a></li>
-                    <li role="none"><a role="menuitem" href="#package">Package</a></li>
-                    <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
-                    <li role="none"><a role="menuitem" href="#">Book Trip</a></li>
-                </ul>
-                <div class="navbar-btn">
-                    <button type="button" class="booking-btn">Book Trip</button>
-                </div>
             </div>
+            <ul class="nav-links" id="primary-navigation" role="menubar">
+                <li role="none"><a role="menuitem" href="#home">Home</a></li>
+                <li role="none"><a role="menuitem" href="#about">About</a></li>
+                <li role="none"><a role="menuitem" href="#tour">Tour</a></li>
+                <li role="none"><a role="menuitem" href="#package">Package</a></li>
+                <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+                <li class="last" role="none"><a role="menuitem" href="#">Book Trip</a></li>
+            </ul>
+            <div class="navbar-btn">
+                <button type="button" class="booking-btn">Book Trip</button>
+            </div>
+
         </nav>
     </header>
     <!--navigation bar ends-->
 
     <!--HERO Section-->
-    <section class="hero" id="home">
+    <section class="hero-section body" id="home">
         <div class="hero-container">
             <div class="hero-content">
                 <p class="hero-subtitle">ELEVATE YOUR TRAVEL JOURNEY</p>
@@ -51,7 +52,10 @@
                         class="hero-title-highlight2">!</span></h1>
             </div>
             <div class="hero-btn">
-                <button class="hero-booking-btn">Book A Trip Now</button>
+                <button class="hero-booking-btn">Book A Trip Now </button>
+                <a href="#">
+                    <span><i class="ri-play-circle-fill"></i></span>
+                </a>
             </div>
 
             <div class="hero-image">
@@ -62,16 +66,16 @@
     <!--HERO Section ends-->
 
     <!--About Section-->
-    <section class="about" id="about">
+    <section class="about-section body" id="about">
         <div class="about-container">
-            <h2 class="about-header">Popular Destination</h2>
-            <p class="about-text">Discover the Most Loved Destinations Around the Globe</p>
+            <h2 class="about-header all-header">Popular Destination</h2>
+            <p class="about-text all-sub-header">Discover the Most Loved Destinations Around the Globe</p>
 
             <div class="about-cards">
                 <div class="about-card">
                     <img src="flight-img/destination-1.jpg" alt="Destination Image">
                     <div class="about-card-content">
-                        <div>
+                        <div class="about-places">
                             <h3 class="about-card-title">Tradition and Futurism</h3>
                             <p class="about-card-description">New York City, USA</p>
                         </div>
@@ -82,46 +86,45 @@
                     </div>
                 </div>
 
-                <div class="about-cards">
-                    <div class="about-card">
-                        <img src="flight-img/destination-2.jpg" alt="Destination Image">
-                        <div class="about-card-content">
-                            <div>
-                                <h3 class="about-card-title">The City of Lights</h3>
-                                <p class="about-card-description">Paris, France</p>
-                            </div>
-                            <div class="about-card-rating">
-                                <span><i class="fa-solid fa-star"></i> 4.5</span>
-                            </div>
-
+                <div class="about-card">
+                    <img src="flight-img/destination-2.jpg" alt="Destination Image">
+                    <div class="about-card-content">
+                        <div class="about-places">
+                            <h3 class="about-card-title">The City of Lights</h3>
+                            <p class="about-card-description">Paris, France</p>
                         </div>
-                    </div>
-
-
-                    <div class="about-cards">
-                        <div class="about-card">
-                            <img src="flight-img/destination-3.jpg" alt="Destination Image">
-                            <div class="about-card-content">
-                                <div>
-                                    <h3 class="about-card-title">Island of the Gods</h3>
-                                    <p class="about-card-description">Bali, Indonesia</p>
-                                </div>
-                                <div class="about-card-rating">
-                                    <span><i class="fa-solid fa-star"></i> 4.8</span>
-                                </div>
-
-                            </div>
+                        <div class="about-card-rating">
+                            <span><i class="fa-solid fa-star"></i> 4.5</span>
                         </div>
+
                     </div>
+                </div>
+
+                <div class="about-card">
+                    <img src="flight-img/destination-3.jpg" alt="Destination Image">
+                    <div class="about-card-content">
+                        <div class="about-places">
+                            <h3 class="about-card-title">Island of the Gods</h3>
+                            <p class="about-card-description">Bali, Indonesia</p>
+                        </div>
+                        <div class="about-card-rating">
+                            <span><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!--About Section ends-->
 
     <!--Tour Section-->
-    <section class="tour-section" id="tour">
+    <section class="tour-section body" id="tour">
         <div class="tour-container">
-            <h2 class="tour-header">Journey To The Sky Made Simple!</h2>
-            <p class="tour-text">Effortless Planning for Your Next Adventure</p>
-            <div class="tours-cards">
+            <h2 class="tour-header all-header">Journey To The Sky Made Simple!</h2>
+            <p class="tour-text all-sub-header">Effortless Planning for Your Next Adventure</p>
+
+            <div class="tour-cards">
                 <div class="tour-card">
                     <div class="tour-card-content1">
                         <span><i class="ri-bookmark-3-line"></i></span>
@@ -155,7 +158,7 @@
                 <div class="tour-card">
                     <div class="tour-card-content1">
                         <span><i class="ri-map-2-line"></i></span>
-                        <h4 class="tour-card-title">Tailored Itineraries</h4>
+                        <h4 class="tour-card-title">Expert Local Insights</h4>
                     </div>
                     <div class="tour-card-content2">
                         <span><i class="ri-map-2-line"></i></span>
@@ -172,7 +175,7 @@
     <!--Tour Section ends-->
 
     <!--Package Section-->
-    <section class="package-section" id="package">
+    <section class="package-section body" id="package">
         <div class="package-container">
             <div class="package-img">
                 <img src="flight-img/showcase.jpg" alt="showcaseImage">
@@ -204,7 +207,7 @@
         </div>
     </section>
     <!-- ACHIEVEMENT-SECTION-->
-    <section class="achievement-section">
+    <section class="achievement-section body">
         <div class="achievement-cards">
             <div class="achievement-card">
                 <h3 class="achievement-numbers">10+</h3>
@@ -222,10 +225,10 @@
     </section>
 
     <!--Discovery Section-->
-    <section class="dicovery-section">
+    <section class="dicovery-section body">
         <div class="discovery-container">
-            <h2 class="discovery-title">Discover The World From Above</h2>
-            <p class="discovery-subtitle"> Experience Breathtaking Views and Unique Perspectives</p>
+            <h2 class="discovery-title all-header">Discover The World From Above</h2>
+            <p class="discovery-subtitle all-sub-header"> Experience Breathtaking Views and Unique Perspectives</p>
 
             <div class="discovery-cards">
                 <div class="dicovery-card">
@@ -260,10 +263,10 @@
     <!--Discovery Section ends-->
 
     <!-- TESTIMONIAL-section -->
-    <section class="slides">
+    <section class="slides body">
         <div class="slides-container">
-            <h2 class="slides-header">Loved By Over Thousand Travelers</h2>
-            <p class="slides-description">
+            <h2 class="slides-header all-header">Loved By Over Thousand Travelers</h2>
+            <p class="slides-description all-sub-header">
                 Discover the stories of wanderlust and cherished memories through the
                 eyes of our valued clients.
             </p>
@@ -328,11 +331,11 @@
                                         <i class="ri-star-fill"></i>
                                     </span>
                                 </div>
-                                <p class="testimonial-text">  My recent adventure with Skywings was nothing short of
-                          spectacular. The personalized itineraries and recommendations
-                          they provided led me to extraordinary locations that I would
-                          never have found on my own. I'm already planning my next
-                          adventure with them!</p>
+                                <p class="testimonial-text"> My recent adventure with Skywings was nothing short of
+                                    spectacular. The personalized itineraries and recommendations
+                                    they provided led me to extraordinary locations that I would
+                                    never have found on my own. I'm already planning my next
+                                    adventure with them!</p>
 
                                 <div class="testimonial-info">
                                     <img src="flight-img/client-2.jpg" alt="testimonial 2">
@@ -365,11 +368,12 @@
                                         <i class="ri-star-fill"></i>
                                     </span>
                                 </div>
-                                <p class="testimonial-text">  Skywings offered a transformative experience for my research
-                          into historical landmarks. The unique aerial perspectives and
-                          provided a new level of appreciation and insight into the
-                          sites I studied. I highly recommend their services to fellow
-                          historians and cultural enthusiasts.</p>
+                                <p class="testimonial-text"> Skywings offered a transformative experience for my
+                                    research
+                                    into historical landmarks. The unique aerial perspectives and
+                                    provided a new level of appreciation and insight into the
+                                    sites I studied. I highly recommend their services to fellow
+                                    historians and cultural enthusiasts.</p>
 
                                 <div class="testimonial-info">
                                     <img src="flight-img/client-3.jpg" alt="testimonial 3">
@@ -402,11 +406,12 @@
                                         <i class="ri-star-fill"></i>
                                     </span>
                                 </div>
-                                <p class="testimonial-text">  Finding a balance between work and travel can be challenging,
-                          but Skywings made it effortless. Their efficient planning and
-                          excellent recommendations helped me maximize my downtime and
-                          enjoy every moment of my trip. I look forward to working with
-                          them again on future travels.</p>
+                                <p class="testimonial-text"> Finding a balance between work and travel can be
+                                    challenging,
+                                    but Skywings made it effortless. Their efficient planning and
+                                    excellent recommendations helped me maximize my downtime and
+                                    enjoy every moment of my trip. I look forward to working with
+                                    them again on future travels.</p>
 
                                 <div class="testimonial-info">
                                     <img src="flight-img/client-4.jpg" alt="testimonial 4">
@@ -426,35 +431,51 @@
     <!-- TESTIMONIAL-section ends -->
 
     <!--Contact Section-->
-   <footer id="contact" class="contact-section">
-    <div class="contact-container">
-        <div class="contact-col">
-             <div class="contact-logo">
-                      <a href="#" class="logo">HighTowers</a>
-                    </div>
-                    <p> Explore the world with ease and excitement through our comprehensive
-                      travel platform. Your journey begins here, where seamless planning
-                      meets unforgettable experiences.</p>
-                      <ul class="contact-social-links">
-                        <li><a href="#" title="Facebook"><i class="ri-facebook-fill"></i></a></li>
-                        <li><a href="#" title="Instagram"><i class="ri-instagram-line"></i></a></li>
-                        <li><a href="#" title="YouTube"><i class="ri-youtube-line"></i></a></li>
-                    </ul>
+    <footer id="contact" class="contact-section">
+        <div class="contact-container body">
+            <div class="contact-col">
+                <div class="contact-logo">
+                    <a href="#" class="logo">HighTowers</a>
+                </div>
+                <p> Explore the world with ease and excitement through our comprehensive
+                    travel platform. Your journey begins here, where seamless planning
+                    meets unforgettable experiences.</p>
+                <ul class="contact-social-links">
+                    <li><a href="#" title="Facebook"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="#" title="Instagram"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="#" title="YouTube"><i class="ri-youtube-line"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact-col" aria-label="Footer Quick Links">
+                <h3 class="quick-links">Quick Links</h3>
+                <ul class="q-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tour">Flights</a></li>
+                    <li><a href="#package">Hotels</a></li>
+                    <li><a href="#home">Cruise</a></li>
+                </ul>
+            </div>
+            <div class="contact-col">
+                <h3 class="contact-us">Contact Us</h3>
+                <ul class="con-list">
+                    <li><a href="#"><span><i class="ri-phone-fill"></i></span> +91 9876543210</a></li>
+                    <li><a href="#"><span><i class="ri-record-mail-line"></i></span>info@highTowers</a></li>
+                    <li><a href="#"><span><i class="ri-map-pin-2-fill"></i></span>Lagos,Nigeria</a></li>
+                </ul>
+            </div>
+            <div class="contact-col">
+                <h3 class="subscribe">Subscribe</h3>
+                <form action="/" method="">
+                    <input type="email" name="email" placeholder="Enter your email" required />
+                    <button class="subscribe-btn" type="submit" for="email" name="subscribe">Subscribe</button>
+                </form>
+            </div>
+            <div class="dev-info">
+                Copyright © <span id="dev-year"></span> Abdullahi-Mohammed. All rights reserved.
+            </div>
         </div>
-        <div class="contact-col"></div>
-        <div class="contact-col"></div>
-        <div class="contact-col"></div>
-    </div>
 
-   </footer>
-
-
-
-
-
-
-
-
+    </footer>
     <script src="script.js"></script>
 
 </body>
